@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PriceRateViewController : UITableViewController
+@interface PriceRateViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    UITableView *_tableView;
+    UIView *_footerView;
+}
+
+@property (nonatomic, retain) UITableView *_tableView;
+@property (nonatomic, retain) UIView *_footerView;
 
 @end

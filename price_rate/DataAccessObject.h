@@ -10,4 +10,10 @@
 
 @interface DataAccessObject : NSObject
 
+-(NSArray *)getPriceRateData;
+-(void)addPriceRateData :(NSString *)title andPrice:(int)price andVolume:(int)volume andUnit:(int)unit;
+-(void)deletePriceRateData : (int)index;
+-(void)allDeletePriceRateData;
+-(NSDictionary *)getPriceRateDataByIndex : (int)index;
+
 @end

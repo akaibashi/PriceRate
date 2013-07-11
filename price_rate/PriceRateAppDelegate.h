@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PriceRateAppDelegate : UIResponder <UIApplicationDelegate>
+@class PriceRateViewController;
+
+@interface PriceRateAppDelegate : UIResponder <UIApplicationDelegate>{
+    UIWindow *window;
+    PriceRateViewController *priceRateViewController;
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) PriceRateViewController *priceRateViewController;
 
 @end

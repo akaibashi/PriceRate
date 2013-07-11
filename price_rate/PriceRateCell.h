@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PriceRateCell : UITableViewCell
+@interface PriceRateCell : UITableViewCell{
+}
+
 
 @end

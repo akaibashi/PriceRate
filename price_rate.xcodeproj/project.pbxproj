@@ -16,6 +16,10 @@
 		020DE5431788001000FF8813 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 020DE5421788001000FF8813 /* Default.png */; };
 		020DE5451788001000FF8813 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 020DE5441788001000FF8813 /* Default@2x.png */; };
 		020DE5471788001000FF8813 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 020DE5461788001000FF8813 /* Default-568h@2x.png */; };
+		020DE54F1788003100FF8813 /* PriceRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 020DE54E1788003100FF8813 /* PriceRateViewController.m */; };
+		02110805178C3A7D00961493 /* DataAccessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 02110804178C3A7D00961493 /* DataAccessObject.m */; };
+		022DE3C11788340100DDC30E /* PriceRateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 022DE3C01788340100DDC30E /* PriceRateCell.m */; };
+		6E407275178C1E2F000B1C27 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E407274178C1E2F000B1C27 /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		020DE5421788001000FF8813 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		020DE5441788001000FF8813 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		020DE5461788001000FF8813 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		020DE54D1788003100FF8813 /* PriceRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceRateViewController.h; sourceTree = "<group>"; };
+		020DE54E1788003100FF8813 /* PriceRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceRateViewController.m; sourceTree = "<group>"; };
+		02110803178C3A7D00961493 /* DataAccessObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccessObject.h; sourceTree = "<group>"; };
+		02110804178C3A7D00961493 /* DataAccessObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccessObject.m; sourceTree = "<group>"; };
+		022DE3BF1788340100DDC30E /* PriceRateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PriceRateCell.h; sourceTree = "<group>"; };
+		022DE3C01788340100DDC30E /* PriceRateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PriceRateCell.m; sourceTree = "<group>"; };
+		6E407273178C1E2F000B1C27 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		6E407274178C1E2F000B1C27 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +92,14 @@
 			children = (
 				020DE53F1788001000FF8813 /* PriceRateAppDelegate.h */,
 				020DE5401788001000FF8813 /* PriceRateAppDelegate.m */,
+				022DE3BF1788340100DDC30E /* PriceRateCell.h */,
+				022DE3C01788340100DDC30E /* PriceRateCell.m */,
+				6E407273178C1E2F000B1C27 /* Utils.h */,
+				6E407274178C1E2F000B1C27 /* Utils.m */,
+				02110803178C3A7D00961493 /* DataAccessObject.h */,
+				02110804178C3A7D00961493 /* DataAccessObject.m */,
+				020DE54D1788003100FF8813 /* PriceRateViewController.h */,
+				020DE54E1788003100FF8813 /* PriceRateViewController.m */,
 				020DE5371788000F00FF8813 /* Supporting Files */,
 			);
 			path = price_rate;
@@ -167,6 +187,10 @@
 			files = (
 				020DE53D1788001000FF8813 /* main.m in Sources */,
 				020DE5411788001000FF8813 /* PriceRateAppDelegate.m in Sources */,
+				020DE54F1788003100FF8813 /* PriceRateViewController.m in Sources */,
+				022DE3C11788340100DDC30E /* PriceRateCell.m in Sources */,
+				6E407275178C1E2F000B1C27 /* Utils.m in Sources */,
+				02110805178C3A7D00961493 /* DataAccessObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +270,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "price_rate/price_rate-Prefix.pch";
 				INFOPLIST_FILE = "price_rate/price_rate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -257,6 +282,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "price_rate/price_rate-Prefix.pch";
 				INFOPLIST_FILE = "price_rate/price_rate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,6 +307,7 @@
 				020DE54C1788001000FF8813 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
